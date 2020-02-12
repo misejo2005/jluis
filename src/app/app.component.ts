@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { analyzeAndValidateNgModules, CompileShallowModuleMetadata, isNgTemplate } from '@angular/compiler';
 import { NumberFormatStyle } from '@angular/common';
+import { Articulo } from './modelos/articulo';
 
 @Component({
   selector: 'app-root',
@@ -146,11 +147,11 @@ export class AppComponent implements OnInit {
     }, {
       nombre: "juan",
       apellido: "escutia"
-    }]
+    }];
 
     let miguel_hidalgo = usuarios.find(item => {
       return item.nombre == "miguel" && item.apellido == "hidalgo";
-    })
+    });
 
     console.log("MIGUEL", miguel_hidalgo);
 
@@ -158,9 +159,22 @@ export class AppComponent implements OnInit {
 
     let res = lista.filter(numero => {
       return numero > 40;
-    })
+    });
 
     console.log(res);
+
+    let articulo: Articulo={
+      nombre: "refresco",
+      precio: 25
+      
+    };
+
+    articulo.precio=10.5;
+
+
+
+
+
 
   }
 }
