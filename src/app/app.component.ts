@@ -171,6 +171,12 @@ export class AppComponent implements OnInit {
 
     articulo.precio=10.5;
 
+    let alcohol : Alcohol= new Alcohol(250, "Tequila");
+
+    alcohol.porcentaje=0.3;
+
+    let porcentaje= alcohol.getPorcentajeAlcohol();
+    
 
 
 
