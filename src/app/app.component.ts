@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { analyzeAndValidateNgModules, CompileShallowModuleMetadata, isNgTemplate } from '@angular/compiler';
 import { NumberFormatStyle } from '@angular/common';
-import { Articulo } from './modelos/articulo';
+import { Alcohol, Articulo, Fruta, Verdura, Impuestos } from './modelos';
 
 @Component({
   selector: 'app-root',
