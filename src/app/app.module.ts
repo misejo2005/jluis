@@ -8,6 +8,7 @@ import { AdministracionModule} from './administracion/administracion.module';
 import { ModulosExternosComponent } from './paginas/modulos-externos/modulos-externos.component';
 import { VistaBootstrapComponent } from './paginas/vista-bootstrap/vista-bootstrap.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { ProductosModule } from './productos/productos.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     AppRoutingModule,
     UtilidadesModule,
     AdministracionModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    ProductosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
