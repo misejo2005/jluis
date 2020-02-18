@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pie',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PieComponent implements OnInit {
 
+  @Input() precio : number = 199.99;
+
+
   constructor() { }
 
-  ngOnInit(): void {
+    ngOnInit() {
+/*
+    setTimeout(() => {
+      this.precio = 15.33;
+    }, 3000);
+*/
   }
 
 }

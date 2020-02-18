@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-encabezado',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EncabezadoComponent implements OnInit {
 
-  public titulo : string = "TITULO CON MAYUSCULA";
+  @Input('nombre') titulo : String = "Blanca Nieves";
+
   public codigo : number = 34774
 
   public clase : String = "fondo";

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { TarjetaComponent } from './tarjeta/tarjeta.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
+import {PieComponent} from '../utilidade3s/pie/pie.component';
 
 
 
 @NgModule({
-  declarations: [TarjetaComponent, EncabezadoComponent, CuerpoComponent],
+  declarations: [TarjetaComponent, EncabezadoComponent, CuerpoComponent, PieComponent],
   imports: [
     CommonModule
   ], exports : [TarjetaComponent]

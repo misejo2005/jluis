@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cuerpo',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cuerpo.component.css']
 })
 export class CuerpoComponent implements OnInit {
+
+  @Input() descripcion : String = "Blanca Nieves";
+  
+  //descripcion : string ="Esta es la descripción del producto";
 
   constructor() { }
 
