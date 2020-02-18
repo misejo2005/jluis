@@ -1,6 +1,6 @@
 <!--{{articulo.precio}} !-->
 <div class="card text-center">
    <app-encabezado [nombre]="articulo.nombre"></app-encabezado>
-   <app-cuerpo [titulo]="articulo.descripcion"></app-cuerpo>
-   <app-pie [precio]="articulo.precio"></app-pie>
+   <app-cuerpo [descripcion]="articulo.descripcion"></app-cuerpo>
+   <app-pie (onImporte)="addImporte($event)" [precio]="articulo.precio"></app-pie>
 </div>

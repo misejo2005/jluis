@@ -1,5 +1,18 @@
 <div class="card-footer text-muted fondo">
-    {{precio}}
-    <input type="number" [value]="precio" >
+    {{precio}}}
+    <br>
+
+
+    <label>Precio</label>
+    <input type="number" [value]="precio" (change)="calculoImporte($event)">
+    <br>
+
+    <label>Este es el importe {{importe}}</label>
+    <br>
+    <label>Cantidad </label>
+    <input type="number" [value]="cantidad" (change)="cantidad=$event.target.value">
+    <br>
+
+    <button (click)="calculaTotal()">Importe Total</button>
 
 </div>
