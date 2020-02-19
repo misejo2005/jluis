@@ -5,17 +5,23 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './encabezado.component.html',
   styleUrls: ['./encabezado.component.css']
 })
-export class EncabezadoComponent implements OnInit {
+export class EncabezadoComponent implements OnInit{
 
-  @Input('nombre') titulo : String = "Blanca Nieves";
+  @Input('nombre') titulo : String;
 
   public codigo : number = 34774
 
   public clase : String = "fondo";
 
-  constructor() { }
+  constructor() {
+    console.log("CONSTRUCTOR",this.titulo);
+   }
 
   ngOnInit(): void {
+    console.log("ngOnInit",this.titulo);
+   //inicializar variables, inicializar api, hacer una conexion
+   //traer valores como coockies.
+
   }
 
   public getStatus() : string {
