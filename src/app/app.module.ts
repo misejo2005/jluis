@@ -9,13 +9,15 @@ import { ModulosExternosComponent } from './paginas/modulos-externos/modulos-ext
 import { VistaBootstrapComponent } from './paginas/vista-bootstrap/vista-bootstrap.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProductosModule } from './productos/productos.module';
+import { VistaTarjetaComponent } from './paginas/vista-tarjeta/vista-tarjeta.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ModulosExternosComponent,
-    VistaBootstrapComponent
+    VistaBootstrapComponent,
+    VistaTarjetaComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,8 @@ export class PieComponent implements OnInit {
 
   @Output() onImporte : EventEmitter<number>= new EventEmitter<number>();
 
+  @Output() onSeleccionar : EventEmitter<boolean>= new EventEmitter<boolean>();
+
   constructor() { }
 
     ngOnInit() {
@@ -35,6 +37,12 @@ calculaTotal() {
   alert("ya estoy aqui");
   let total = this.importe * this.cantidad;
   this.onImporte.emit(total);
+}
+
+seleccionar(){
+  console.log("Hice click en pie seleccionar");
+  this.onSeleccionar.emit(true);
+
 }
 
 }

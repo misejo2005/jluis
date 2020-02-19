@@ -1,6 +1,6 @@
 <!--{{articulo.precio}} !-->
-<div class="card text-center">
+<div class="card text-center {{clase_coloreado}}">
    <app-encabezado [nombre]="articulo.nombre"></app-encabezado>
    <app-cuerpo [descripcion]="articulo.descripcion"></app-cuerpo>
-   <app-pie (onImporte)="addImporte($event)" [precio]="articulo.precio"></app-pie>
+   <app-pie (onImporte)="addImporte($event)" (onSeleccionar)="colorear($event)" [precio]="articulo.precio"></app-pie>
 </div>
