@@ -14,6 +14,7 @@ import { VistaCicloComponent } from './paginas/vista-ciclo/vista-ciclo.component
 import { VistaCondicionComponent } from './paginas/vista-condicion/vista-condicion.component';
 import { VistaSwitchComponent } from './paginas/vista-switch/vista-switch.component';
 import { VistaClaseComponent } from './paginas/vista-clase/vista-clase.component';
+import { VistaEstiloComponent } from './paginas/vista-estilo/vista-estilo.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { VistaClaseComponent } from './paginas/vista-clase/vista-clase.component
     VistaCicloComponent,
     VistaCondicionComponent,
     VistaSwitchComponent,
-    VistaClaseComponent
+    VistaClaseComponent,
+    VistaEstiloComponent
   ],
   imports: [
     BrowserModule,
